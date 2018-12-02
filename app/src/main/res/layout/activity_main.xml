@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_blue">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moon" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="ZENSLEEP"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <View
+        android:id="@+id/purple_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/gradient_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="Which sleeper are you ?"
+        android:textColor="@color/gold_yellow"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="I fell asleep at"
+        android:textColor="@color/gold_yellow"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <View
+        android:id="@+id/selector_background"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/time_selector_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="To be in a good shape i should wake up at"
+        android:textAlignment="center"
+        android:textColor="@color/gold_yellow"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selector_background" />
+
+    <View
+        android:id="@+id/result_bg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left" />
+
+    <View
+        android:id="@+id/left"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_short_grey"
+        app:layout_constraintBottom_toTopOf="@+id/result_bg"
+        app:layout_constraintStart_toStartOf="@+id/result_bg"
+        app:layout_constraintTop_toTopOf="@+id/middle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/middle"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_middle_white"
+        app:layout_constraintBottom_toTopOf="@+id/result_bg"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <View
+        android:id="@+id/right"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_long_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/middle"
+        app:layout_constraintStart_toEndOf="@+id/middle" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="Short sleeper"
+        android:textAlignment="center"
+        android:textColor="@color/night_blue"
+        android:textSize="18sp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/left"
+        app:layout_constraintEnd_toStartOf="@+id/middle"
+        app:layout_constraintStart_toStartOf="@+id/left"
+        app:layout_constraintTop_toTopOf="@+id/left" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="Middle sleeper"
+        android:textAlignment="center"
+        android:textColor="@color/night_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/middle"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/middle" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="Long sleeper"
+        android:textAlignment="center"
+        android:textColor="@color/night_blue"
+        android:textSize="18sp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/right"
+        app:layout_constraintEnd_toEndOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/right" />
+
+    <TextView
+        android:id="@+id/tv_resultMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="06:00am"
+        android:textColor="@color/night_blue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/result_bg"
+        app:layout_constraintEnd_toEndOf="@+id/result_bg"
+        app:layout_constraintStart_toStartOf="@+id/result_bg"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <View
+        android:id="@+id/info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/time_selector_background"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultMiddle" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="?"
+        android:textColor="@color/gold_yellow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/info"
+        app:layout_constraintEnd_toEndOf="@+id/info"
+        app:layout_constraintStart_toStartOf="@+id/info"
+        app:layout_constraintTop_toTopOf="@+id/info" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/number_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selector_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selector_background"
+        app:np_dividerColor="@color/gold_yellow"
+        app:np_formatter="@string/number_picker_formatter"
+        app:np_height="50dp"
+        app:np_max="59"
+        app:np_min="0"
+        app:np_dividerThickness="0dp"
+        app:np_fadingEdgeEnabled="true"
+        app:np_selectedTextColor="@color/night_blue"
+        app:np_selectedTextSize="30dp"
+        app:np_textColor="@color/gold_yellow"
+        app:np_textSize="20dp"
+        app:np_typeface="@string/roboto_condensed"
+        app:np_value="3"
+        app:np_width="150dp"
+        app:np_orientation="horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_resultShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="04:30am"
+        android:textColor="@color/night_blue"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_resultMiddle"
+        app:layout_constraintEnd_toEndOf="@+id/result_bg"
+        app:layout_constraintStart_toStartOf="@+id/result_bg"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_resultLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/patrickhandregular"
+        android:text="07:30am"
+        android:textColor="@color/night_blue"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/result_bg"
+        app:layout_constraintEnd_toEndOf="@+id/result_bg"
+        app:layout_constraintStart_toStartOf="@+id/result_bg"
+        app:layout_constraintTop_toTopOf="@+id/tv_resultShort"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
