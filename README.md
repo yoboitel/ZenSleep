@@ -3,7 +3,7 @@ ZenSleep App
 
 Idea : 
 
-![img_20181203_011456_79](https://user-images.githubusercontent.com/10677178/49346893-f1621900-f698-11e8-9e30-7dda3112a0a7.jpg)
+![idea](https://user-images.githubusercontent.com/10677178/49346940-75b49c00-f699-11e8-9dd4-41327052715f.jpg)
 
 Design Process using Figma (Best UI/UX Design tool 🌟 ) :
 
